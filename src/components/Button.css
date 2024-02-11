@@ -1,0 +1,39 @@
+.main_btn{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 600;
+    width: 220px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.main_btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+}
+.outline_btn{
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 220px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.outline_btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+}

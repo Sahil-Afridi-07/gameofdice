@@ -1,0 +1,13 @@
+.rules_container{
+    background-color: #FBF1F1;
+    padding: 20px;
+    width: 790px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+.rules_container h2{
+    font-size: 24px;
+}
+.text{
+    margin-top: 24px;
+}

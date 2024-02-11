@@ -1,0 +1,37 @@
+.box{
+    width: 72px;
+    height: 72px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+.flex{
+    display: flex;
+    gap: 24px;
+}
+.number_selector p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.number_selector{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.error{
+    color: red;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+
+}
