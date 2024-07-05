@@ -1,15 +1,79 @@
-.container{
+/* StartGame.css */
+.container {
     max-width: 1180px;
     display: flex;
+    flex-direction: column; /* Default to column layout */
     margin: 0 auto;
     height: 100vh;
     align-items: center;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add some padding */
 }
-.content h1{
-    font-size: 96px;
+
+.container img {
+    max-width: 100%;
+    height: auto; /* Make image responsive */
+    width: 200px; /* Default image width */
+}
+
+.content h1 {
+    font-size: 36px; /* Default font size for smaller screens */
     font-weight: 700;
+    text-align: center; /* Center align text */
+    margin: 20px 0; /* Add some margin */
 }
-.btn_content{
+
+.btn_content {
     display: flex;
-    justify-content: end;
+    justify-content: center; /* Center button */
+    width: 100%; /* Full width */
+}
+
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row; /* Row layout for medium and larger screens */
+    }
+
+    .container img {
+        width: 300px; /* Increase image width */
+    }
+
+    .content h1 {
+        font-size: 48px; /* Increase font size */
+    }
+
+    .btn_content {
+        justify-content: flex-start; /* Align button to the start */
+    }
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    .container img {
+        width: 400px; /* Further increase image width */
+    }
+
+    .content h1 {
+        font-size: 72px; /* Further increase font size */
+    }
+
+    .btn_content {
+        justify-content: center; /* Center button */
+    }
+}
+
+/* Media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+    .container img {
+        width: 500px; /* Maximum image width */
+    }
+
+    .content h1 {
+        font-size: 96px; /* Maximum font size */
+    }
+
+    .btn_content {
+        justify-content: flex-end; /* Align button to the end */
+    }
 }

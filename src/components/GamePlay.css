@@ -1,24 +1,24 @@
-.score_container h1{
-    font-size: 100px;
+.score_container h1 {
+    font-size: 80px; /* Default font size */
     font-weight: 500;
-    line-height: 100px;
+    line-height: 80px; /* Default line height */
 }
-.score_container p{
+
+.score_container p {
     font-size: 24px;
     font-weight: 500;
 }
-.score_container{
+
+.score_container {
     max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* background-color: red; */
-    
 }
-.box{
-    width: 72px;
-    height: 72px;
+
+.box {
+    width: 60px; /* Default box width */
+    height: 60px; /* Default box height */
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -27,19 +27,159 @@
     font-weight: 700;
 }
 
-.top_section{
+.top_section {
     display: flex;
-    justify-content: space-around;
-    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-main{
-    padding-top: 40px;
+
+main {
+    padding-top: 20px; /* Default padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.btns{
+
+.btns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+}
+
+/* Media query for screens between 300px and 500px */
+@media (min-width: 300px) and (max-width: 500px) {
+    .score_container h1 {
+        font-size: 50px; /* Decrease font size */
+        line-height: 50px; /* Decrease line height */
+    }
+
+    .score_container p {
+        font-size: 15px; /* Decrease font size */
+    }
+
+    .box {
+        width: 40px; /* Decrease box width */
+        height: 40px; /* Decrease box height */
+        font-size: 20px; /* Decrease font size */
+    }
+
+    .top_section {
+        gap: 16px; /* Decrease gap */
+    }
+
+    main {
+        padding-top: 10px; /* Decrease padding */
+    }
+}
+
+/* Media query for screens between 500px and 600px */
+@media (max-width: 600px) {
+    .score_container h1 {
+        font-size: 50px; /* Increase font size */
+        line-height: 50px; /* Increase line height */
+    }
+
+    .score_container p {
+        font-size: 16px; /* Increase font size */
+    }
+
+    .box {
+        width: 60px; /* Increase box width */
+        height: 60px; /* Increase box height */
+        font-size: 24px; /* Increase font size */
+    }
+
+    .top_section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    main {
+        padding-top: 20px; /* Increase padding */
+    }
+}
+
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .score_container h1 {
+        font-size: 100px; /* Increase font size */
+        line-height: 100px; /* Increase line height */
+    }
+
+    .score_container p {
+        font-size: 24px;
+    }
+
+    .box {
+        width: 72px; /* Increase box width */
+        height: 72px; /* Increase box height */
+        font-size: 24px;
+    }
+
+    .top_section {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    main {
+        padding-top: 40px; /* Increase padding */
+    }
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    .score_container h1 {
+        font-size: 100px; /* Further increase font size */
+        line-height: 100px; /* Further increase line height */
+    }
+
+    .score_container p {
+        font-size: 28px; /* Increase font size */
+    }
+
+    .box {
+        width: 80px; /* Further increase box width */
+        height: 80px; /* Further increase box height */
+        font-size: 28px; /* Increase font size */
+    }
+
+    .top_section {
+        gap: 40px; /* Increase gap */
+    }
+
+    main {
+        padding-top: 60px; /* Increase padding */
+    }
+}
+
+/* Media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+    .score_container h1 {
+        font-size: 100px; /* Maximum font size */
+        line-height: 100px; /* Maximum line height */
+    }
+
+    .score_container p {
+        font-size: 32px; /* Maximum font size */
+    }
+
+    .box {
+        width: 80px; /* Maximum box width */
+        height: 80px; /* Maximum box height */
+        font-size: 32px; /* Maximum font size */
+    }
+
+    .top_section {
+        gap: 20px; /* Maximum gap */
+    }
+
+    main {
+        padding-top: 20px; /* Maximum padding */
+    }
 }

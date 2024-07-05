@@ -1,37 +1,146 @@
-.box{
-    width: 72px;
-    height: 72px;
+.box {
+    width: 50px; /* Default width for small screens */
+    height: 50px; /* Default height for small screens */
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px; /* Default font size for small screens */
     font-weight: 700;
-    
+    cursor: pointer;
 }
-.selected{
+
+.selected {
     background-color: black;
     color: white;
 }
-.flex{
+
+.flex {
     display: flex;
-    gap: 24px;
+    gap: 12px; /* Default gap for small screens */
 }
-.number_selector p{
-    font-size: 24px;
+
+.number_selector p {
+    font-size: 18px; /* Default font size for small screens */
     font-weight: 700;
+    text-align: center; /* Center align text */
 }
-.number_selector{
+
+.number_selector {
     display: flex;
     flex-direction: column;
-    align-items: end;
-
+    align-items: center; /* Center align items */
 }
-.error{
+
+.error {
     color: red;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 14px; /* Default font size for small screens */
     margin-bottom: 10px;
-    
+    text-align: center; /* Center align text */
+}
 
+/* Media query for screens between 300px and 500px */
+@media (min-width: 300px) and (max-width: 500px) {
+    .box {
+        width: 35px; /* Decrease width */
+        height: 35px; /* Decrease height */
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .flex {
+        gap: 8px; /* Decrease gap */
+    }
+
+    .number_selector p {
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .error {
+        font-size: 12px; /* Decrease font size */
+    }
+}
+
+/* Media query for screens larger than 500px */
+@media (min-width: 500px) and (max-width: 600px) {
+    .box {
+        width: 60px; /* Increase width */
+        height: 60px; /* Increase height */
+        font-size: 20px; /* Increase font size */
+    }
+
+    .flex {
+        gap: 16px; /* Increase gap */
+    }
+
+    .number_selector p {
+        font-size: 20px; /* Increase font size */
+    }
+
+    .error {
+        font-size: 16px; /* Increase font size */
+    }
+}
+
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .box {
+        width: 72px; /* Increase width */
+        height: 72px; /* Increase height */
+        font-size: 24px; /* Increase font size */
+    }
+
+    .flex {
+        gap: 24px; /* Increase gap */
+    }
+
+    .number_selector p {
+        font-size: 24px; /* Increase font size */
+    }
+
+    .error {
+        font-size: 20px; /* Increase font size */
+    }
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    .box {
+        width: 80px; /* Further increase width */
+        height: 80px; /* Further increase height */
+        font-size: 28px; /* Further increase font size */
+    }
+
+    .flex {
+        gap: 32px; /* Further increase gap */
+    }
+
+    .number_selector p {
+        font-size: 28px; /* Further increase font size */
+    }
+
+    .error {
+        font-size: 24px; /* Further increase font size */
+    }
+}
+
+/* Media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+    .box {
+        width: 100px; /* Maximum width */
+        height: 100px; /* Maximum height */
+        font-size: 32px; /* Maximum font size */
+    }
+
+    .flex {
+        gap: 40px; /* Maximum gap */
+    }
+
+    .number_selector p {
+        font-size: 32px; /* Maximum font size */
+    }
+
+    .error {
+        font-size: 28px; /* Maximum font size */
+    }
 }
